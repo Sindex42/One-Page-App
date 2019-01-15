@@ -8,4 +8,5 @@ var message_array = []
 
 button.onclick = function () {
   messages.innerText = textarea.value
+  textarea.value = ""
 }
