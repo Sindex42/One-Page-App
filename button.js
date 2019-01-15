@@ -7,11 +7,11 @@ var messageLog = document.getElementById('messageLog')
 var messageArray = []
 
 function printMessages () {
-  return messageArray.join("<br />")
+  return messageArray.join('<br />')
 }
 
 button.onclick = function () {
   messageArray.push(myTextarea.value)
   messageLog.innerHTML = printMessages()
-  myTextarea.value = ""
+  myTextarea.value = ''
 }
