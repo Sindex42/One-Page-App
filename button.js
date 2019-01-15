@@ -1,9 +1,11 @@
 var button = document.getElementById('button')
 
-var text = document.getElementById('textarea')
+var textarea = document.getElementById('myTextarea')
 
-var messages = document.getElementById('printmessage')
+var messages = document.getElementById('messageLog')
 
-button.onclick= function () {
-  messages.innerText = text.innerText
+var message_array = []
+
+button.onclick = function () {
+  messages.innerText = textarea.value
 }
