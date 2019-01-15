@@ -4,9 +4,18 @@ var textarea = document.getElementById('myTextarea')
 
 var messages = document.getElementById('messageLog')
 
-var message_array = []
+var messageArray = []
+
+function printMessages () { 
+  for (var i = 0; i < messageArray.length; i++)
+    {console.log('Hello')
+      return messageArray[i]
+    }
+}
 
 button.onclick = function () {
-  messages.innerText = textarea.value
+  messageArray.push(textarea.value)
+  messages.innerText = printMessages()
   textarea.value = ""
 }
+
