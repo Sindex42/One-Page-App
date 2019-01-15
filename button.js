@@ -1,5 +1,9 @@
 var button = document.getElementById('button')
 
-button.addEventListener('click', function () {
-  console.log('Hello')
-})
+var text = document.getElementById('textarea')
+
+var messages = document.getElementById('printmessage')
+
+button.onclick= function () {
+  messages.innerText = text.innerText
+}
